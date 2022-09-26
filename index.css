@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+    border: none;
+    outline: none;
+    overscroll-behavior: contain;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    background-color: #2c2f33;
+    font-family: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.title {
+    color: white;
+    font-size: clamp(24px,5vw,36px);
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.container {
+    width: min(700px, 90%);
+    margin: 0 auto 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button {
+    padding: 10px 16px;
+    font-size: 14px;
+    color: white;
+    background-color: #5865F2;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s background-color linear;
+}
+
+.button:hover {
+    background-color: #515bd7;
+}
+
+label.input {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+label.input h5 {
+    color: #B9BBBE;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+label.input input {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #23272a;
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+.words {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.wordsListTotal {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #23272a;
+    font-size: 16px;
+    color: #e0e0e0;
+    user-select: text;
+    white-space: pre;
+    line-height: 1.4em;
+}
+
